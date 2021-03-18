@@ -1,6 +1,7 @@
 body{
     background-color: #151515;
     font-family: sans-serif;
+    margin: 0px;
 }
 
 header{
@@ -46,6 +47,22 @@ header div#account{
     align-items: center;
     justify-content: right;
     position: absolute;
-    bottom: -15vh;
-    right: -20vw;
+    bottom: -20vh;
+    right: -23vw;
+    text-align: right;
+}
+
+header div#account img{
+    height: 10vh;
+    margin-left: 8px;
+}
+
+header div#overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 40%;
+    background-color: rgba(0,0,0,0.5);
 }
