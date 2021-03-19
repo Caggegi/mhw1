@@ -9,6 +9,7 @@ header{
     z-index: 1;
     background-image: url(https://9to5mac.com/wp-content/uploads/sites/6/2020/10/The-Lake-5-dragged.jpg?quality=82&strip=all&w=1000);
     height: 40vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -74,11 +75,11 @@ header div#overlay{
 /*navigation*/
 
 nav{
+    margin-right: 16px;
     margin-bottom: 0px;
-    height: 100%;
     margin-top: 2px;
     z-index: 0;
-    width: fit-content;
+    width: 20%;
     letter-spacing: 1px;
     display: flex;
     flex-direction: column;
@@ -86,6 +87,7 @@ nav{
     align-items: left;
     padding-right: 16px;
     padding-bottom: 16px;
+    background-color: #101010;
 }
 
 nav h4{
@@ -98,13 +100,13 @@ nav img{
 }
 
 nav div.nav_button{
-    padding: 2px 16px 2px 16px;
+    width: 100%;
+    padding: 2px 0px 2px 16px;
     display: flex;
     align-items: center;
     justify-content: left;
     margin-top: -2px;
     color: white;
-    background-color: #101010;
 }
 
 nav div.nav_button:hover{
@@ -122,6 +124,35 @@ nav div.nav_button div{
     
 }
 
+div#main nav div div.subscription{
+    height: 28vh;
+}
+
 div#main{
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div#main section#video-frame{
+    width: 80%;
+}
+
+div.show-case{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20vh;
+}
+
+.card{
+    height: 20vh;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    height: 100%;
 }
