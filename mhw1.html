@@ -3,6 +3,8 @@
     <head>
         <link href="mhw1.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -27,32 +29,35 @@
                 </div>
             </div>
         </header>
-        <div>
+        <div id="main">
             <nav>
-                <div class="nav_button">
-                    <img class="default" src="img/home-outline.png"/>
-                    <img class="hidden" src="img/home.png"/>
-                    <h4>Home</h4>
-                </div>
-                <div class="nav_button">
-                    <img class="default" src="img/clock-time-four-outline.png"/>
-                    <img class="hidden" src="img/clock-time-four.png"/>
-                    <h4>Recents</h4>
-                </div>
-                <div class="nav_button">
-                    <img class="default" src="img/numeric-1-circle-outline.png"/>
-                    <img class="hidden" src="img/numeric-1-circle.png"/>
-                    <h4>Trend</h4>
-                </div>
-                <div class="nav_button">
-                    <img class="default" src="img/heart-outline.png"/>
-                    <img class="hidden" src="img/heart.png"/>
-                    <h4>Favourites</h4>
-                </div>
+                <a href="mhw1.html">
+                    <div class="nav_button">
+                        <img src="img/home-outline.svg">
+                        <h4>Home</h4>
+                    </div>
+                </a>
+                <a href="mhw1.html">
+                    <div class="nav_button">
+                        <img src="img/clock-time-four-outline.svg">
+                        <h4>Recents</h4>
+                    </div>
+                </a>
+                <a href="mhw1.html">
+                    <div class="nav_button">
+                        <img src="img/trending-up.svg">
+                        <h4>Trend</h4>
+                    </div>
+                </a>
+                <a href="mhw1.html">
+                    <div class="nav_button">
+                        <img src="img/heart-outline.svg">
+                        <h4>Favourites</h4>
+                    </div>
+                </a>
                 <div>
                     <div class="nav_button">
-                        <img class="default" src="img/account-multiple-check-outline.png"/>
-                        <img class="hidden" src="img/account-multiple-check.png"/>        
+                        <img src="img/account-multiple-check-outline.svg">
                         <h4>Subscription</h4>
                     </div>
                     <div class="subscription">
@@ -60,16 +65,43 @@
                     </div>
                 </div>
             </nav>
-            <section>
-                <section>
-
+            <section id="video-frame">
+                <section class="genre">
+                    <h2>
+                        Movies
+                    </h2>
+                    <div class="show-case">
+                        <div class="card">
+                            <img src=""/>
+                            <h5>Titolo</h5>
+                            <p>creatore</p>
+                        </div>
+                    </div>
                 </section>
-                <section>
-
+                <section class="genre">
+                    <h2>
+                        Music
+                    </h2>
+                    <div class="show-case">
+                        <div class="card">
+                            <img src=""/>
+                            <h5>Titolo</h5>
+                            <p>creatore</p>
+                        </div>
+                    </div>
                 </section>
-                <section>
-
-                </section>
+                <section class="genre">
+                    <h2>
+                        Gameplay
+                    </h2>
+                    <div class="show-case">
+                        <div class="card">
+                            <img src=""/>
+                            <h5>Titolo</h5>
+                            <p>creatore</p>
+                        </div>
+                    </div>
+                </section>  
             </section>
         </div>
         <footer>

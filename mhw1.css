@@ -1,11 +1,12 @@
 body{
     background-color: #151515;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     color: #fff;
 }
 
 header{
+    z-index: 1;
     background-image: url(https://9to5mac.com/wp-content/uploads/sites/6/2020/10/The-Lake-5-dragged.jpg?quality=82&strip=all&w=1000);
     height: 40vh;
     background-repeat: no-repeat;
@@ -73,10 +74,14 @@ header div#overlay{
 /*navigation*/
 
 nav{
+    margin-bottom: 0px;
+    height: 100%;
+    margin-top: 2px;
+    z-index: 0;
     width: fit-content;
+    letter-spacing: 1px;
     display: flex;
     flex-direction: column;
-    background-color: #101010;
     justify-content: center;
     align-items: left;
     padding-right: 16px;
@@ -85,39 +90,38 @@ nav{
 
 nav h4{
     font-size: 1em;
-}
+}  
 
 nav img{
     height: 5vh;
-}
-
-nav img.default{
-    position: relative;
-    opacity: 1.0;
-}
-
-nav img.hidden{
-    position: relative;
-    left: -5vh;
-    opacity: 0.0;
-}
-
-nav img.default:hover{
-    opacity: 0.0;
-}
-
-nav img.hidden:hover{
-    opacity: 1.0;
+    padding-right: 8px;
 }
 
 nav div.nav_button{
-    border: 2px solid #fff;
-    border-radius: 500px;
-    margin-left: -30px;
-    padding: 0px 10px 0px 40px;
+    padding: 2px 16px 2px 16px;
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-top: 8px;
+    margin-top: -2px;
+    color: white;
+    background-color: #101010;
+}
+
+nav div.nav_button:hover{
+    color: #101010;
+    background-color: white;
+}
+
+nav div.nav_button div{
+    height: 2em;
+    width: 2em;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
+}
+
+div#main{
+    display: flex;
 }
