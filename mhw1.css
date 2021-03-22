@@ -3,13 +3,14 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     color: #fff;
+    padding: 0px;
 }
 
 header{
-    z-index: 1;
     background-image: url(https://9to5mac.com/wp-content/uploads/sites/6/2020/10/The-Lake-5-dragged.jpg?quality=82&strip=all&w=1000);
     height: 40vh;
     width: 100%;
+    margin: 0px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -143,16 +144,20 @@ div.show-case{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 .card{
-    height: 20vh;
-    padding: 8px;
+    margin: 8px;
+    height: 30vh;
     display: flex;
     flex-direction: column;
 }
 
 .card img{
-    height: 100%;
+    height: 70%;
+}
+
+.card h5, .card p{
+    margin: 4px;
 }
