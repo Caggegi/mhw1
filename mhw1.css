@@ -9,7 +9,6 @@ body{
 header{
     background-image: url(https://9to5mac.com/wp-content/uploads/sites/6/2020/10/The-Lake-5-dragged.jpg?quality=82&strip=all&w=1000);
     height: 40vh;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -76,6 +75,7 @@ header div#overlay{
 /*navigation*/
 
 nav{
+    font-family: 'Noto Sans JP', sans-serif;
     margin-right: 16px;
     margin-bottom: 0px;
     margin-top: 2px;
@@ -206,23 +206,17 @@ footer div p{
         display: none;
     }
 
-    nav div.nav_button img{
-        
-    }
-
-    div#main nav div div.subscription{
-        display: none;
-    }
+  
 
     div#main section#video-frame{
         width: 100%;
-        margin: 8px;
+        margin: 8px 24px;
     }
 
     div.show-case{
         flex-direction: column;
         justify-content: space-between;
-        align-items: left;
+        align-items: center;
     }
 
     .card{
@@ -230,6 +224,7 @@ footer div p{
         height: 30vh;
         display: flex;
         flex-direction: row;
+        border-bottom: 1px solid white;
     }
 
     .card img{
@@ -237,6 +232,10 @@ footer div p{
     }
 
     header div#info{
+        display: none;
+    }
+
+    div#main nav div div.subscription{
         display: none;
     }
 
@@ -250,4 +249,47 @@ footer div p{
 
     nav div.nav_button:hover{
         background-color: #101010;
+    }
+
+    header div#search div{
+        display: flex;
+        align-items: center;
+    }
+
+    header div#search div img{
+        border-radius: 50px;
+    }
+
+    header div#search{
+        width: 90%;
+    }
+
+    header, header div#overlay{
+        height: 30vh;
+    }
+
+    footer{
+        width: 100%;
+        margin-bottom: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .card{
+        margin: 8px;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid white;
+    }
+
+    header, header div#overlay, footer{
+        width: 350px;
+    }
 }
