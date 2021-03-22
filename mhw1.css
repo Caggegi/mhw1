@@ -9,8 +9,7 @@ body{
 header{
     background-image: url(https://9to5mac.com/wp-content/uploads/sites/6/2020/10/The-Lake-5-dragged.jpg?quality=82&strip=all&w=1000);
     height: 40vh;
-    width: 100%;
-    margin: 0px;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,7 +19,7 @@ header{
     box-shadow: 0px 0px 20px black;
 }
 
-header div{
+header div#info{
     position: relative;
 }
 
@@ -33,6 +32,7 @@ header div#search{
     align-items: center;
     color: #424242;
     border-radius: 10px;
+    z-index: 1;
 }
 
 header div#search img{
@@ -69,7 +69,7 @@ header div#overlay{
     left: 0px;
     bottom: 0px;
     right: 0px;
-    height: 40%;
+    height: 40vh;
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -84,20 +84,21 @@ nav{
     letter-spacing: 1px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: left;
     padding-right: 16px;
     padding-bottom: 16px;
     background-color: #101010;
+    flex-grow: 1;
 }
 
 nav h4{
-    font-size: 1em;
+    font-size: 1vw;
 }  
 
 nav img{
     height: 5vh;
-    padding-right: 8px;
+    margin-right: 8px;
 }
 
 nav div.nav_button{
@@ -117,7 +118,6 @@ nav div.nav_button:hover{
 
 nav div.nav_button div{
     height: 2em;
-    width: 2em;
     margin-right: 8px;
     background-repeat: no-repeat;
     background-position: center;
@@ -126,7 +126,17 @@ nav div.nav_button div{
 }
 
 div#main nav div div.subscription{
-    height: 28vh;
+    display: flex;
+    align-items: center;
+    padding:8px;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+div#main nav div div.subscription img{
+    border: 2px solid rgb(221, 8, 139);
+    margin: 8px;
+    border-radius: 50px;
 }
 
 div#main{
@@ -142,7 +152,7 @@ div#main section#video-frame{
 div.show-case{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 10vh;
 }
@@ -160,4 +170,84 @@ div.show-case{
 
 .card h5, .card p{
     margin: 4px;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    text-align: right;
+    padding: 0px 24px 0px 24px;
+    justify-content: space-between;
+}
+
+footer div p{
+    font-size: 0.8rem;
+}
+
+.mobile{
+    display: none;
+}
+
+
+/*Versione mobile*/
+@media (max-width: 950px) {
+    nav{
+        flex-direction: row;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding: 8px;
+        height: 5%;
+    }
+
+    nav div.nav_button h4{
+        display: none;
+    }
+
+    nav div.nav_button img{
+        
+    }
+
+    div#main nav div div.subscription{
+        display: none;
+    }
+
+    div#main section#video-frame{
+        width: 100%;
+        margin: 8px;
+    }
+
+    div.show-case{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+    }
+
+    .card{
+        margin: 8px;
+        height: 30vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card img{
+        margin-right: 8px;
+    }
+
+    header div#info{
+        display: none;
+    }
+
+    .desktop{
+        display:none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    nav div.nav_button:hover{
+        background-color: #101010;
 }
