@@ -9,3 +9,6 @@ Gli utenti premium possono abbonarsi o meno a un Creator così da supportarlo.
 ### Credits:
 Rosario Caggegi o46002042     
 [![GitHub - mhw1](https://github.com/Caggegi/mhw1/blob/master/img/Light/github.svg)](https://github.com/Caggegi/mhw1)
+[![Instagram](https://github.com/Caggegi/mhw1/blob/master/img/Light/instagram.svg)](https://www.instagram.com/rosario.caggegi/)
+[![Facebook](https://github.com/Caggegi/mhw1/blob/master/img/Light/facebook.svg)](https://www.facebook.com/rosario.caggegi.142/)
+
