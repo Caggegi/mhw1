@@ -209,7 +209,6 @@ footer div p{
     nav div.nav_button h4{
         display: none;
     }
-
   
 
     div#main section#video-frame{
@@ -233,7 +232,7 @@ footer div p{
     .card img{
         margin-right: 8px;
         height: 24vh;
-        width: calc(24vh*1.7);
+        width: calc(24vh*16/9);
     }
 
     header div#info{
@@ -308,6 +307,10 @@ footer div p{
 
     section#video-frame section.genre{
         margin-top: 20%;
+    }
+
+    header div#search{
+        box-shadow: 0px 0px 20px black;
     }
 
 }
