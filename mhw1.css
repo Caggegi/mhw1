@@ -92,6 +92,10 @@ nav{
     flex-grow: 1;
 }
 
+nav a{
+    text-decoration: none;
+}
+
 nav h4{
     font-size: 1vw;
 }  
@@ -224,11 +228,12 @@ footer div p{
         height: 30vh;
         display: flex;
         flex-direction: row;
-        border-bottom: 1px solid white;
     }
 
     .card img{
         margin-right: 8px;
+        height: 24vh;
+        width: calc(24vh*1.7);
     }
 
     header div#info{
@@ -285,7 +290,7 @@ footer div p{
         height: 30vh;
         display: flex;
         flex-direction: column;
-        border-bottom: 1px solid white;
+        margin-bottom: 10%;
     }
 
     header div#overlay{
