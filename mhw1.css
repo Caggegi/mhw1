@@ -36,6 +36,7 @@ header div#search{
 
 header div#search img{
     height: 3.5vh;
+    width: 3.5vh;
     margin-right: 16px;
 }
 
@@ -58,7 +59,7 @@ header div#account{
 header div#account img{
     height: 10vh;
     margin-left: 8px;
-    border-radius: 100px;
+    border-radius: 100%;
     border: 2px solid white;
 }
 
@@ -120,14 +121,7 @@ nav div.nav_button:hover{
     background-color: white;
 }
 
-nav div.nav_button div{
-    height: 2em;
-    margin-right: 8px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-}
+/*main*/
 
 div#main nav div div.subscription{
     display: flex;
@@ -140,7 +134,7 @@ div#main nav div div.subscription{
 div#main nav div div.subscription img{
     border: 2px solid rgb(221, 8, 139);
     margin: 8px;
-    border-radius: 50px;
+    border-radius: 100%;
 }
 
 div#main{
@@ -149,14 +143,14 @@ div#main{
     align-items: flex-start;
 }
 
-div#main section#video-frame{
+div#main article#video-frame{
     width: 80%;
 }
 
 div.show-case{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     margin-bottom: 10vh;
 }
@@ -169,7 +163,8 @@ div.show-case{
 }
 
 .card img{
-    width: 70%;
+    width: 18vw;
+    height: calc(18vw*9/16);
 }
 
 .card h5, .card p{
@@ -211,7 +206,7 @@ footer div p{
     }
   
 
-    div#main section#video-frame{
+    div#main article#video-frame{
         width: 100%;
         margin: 8px 24px;
     }
@@ -261,7 +256,7 @@ footer div p{
     }
 
     header div#search div img{
-        border-radius: 50px;
+        border-radius: 100%;
     }
 
     header div#search{
@@ -305,7 +300,7 @@ footer div p{
         height: 10%;
     }
 
-    section#video-frame section.genre{
+    article#video-frame section.genre{
         margin-top: 20%;
     }
 
