@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'SF_custom';
+    src: url("font/SF-UI-Display-Regular.otf");
+}
+
 body{
     background-color: #151515;
     font-family: 'Roboto', sans-serif;
@@ -27,6 +32,7 @@ header div#search{
     display: flex;
     width: 50%;
     height: 6vh;
+    padding: 2px;
     justify-content: space-between;
     align-items: center;
     color: #424242;
@@ -41,7 +47,10 @@ header div#search img{
 }
 
 header div#search h4{
-    font-size: 3.5vh;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-size: 1rem;
     margin-left: 16px;
 }
 
@@ -70,13 +79,15 @@ header div#overlay{
     bottom: 0px;
     right: 0px;
     height: 40vh;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
 }
 
 /*navigation*/
 
 nav{
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'SF_custom', 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-style: normal;
     margin-right: 16px;
     margin-bottom: 0px;
     margin-top: 2px;
@@ -98,7 +109,7 @@ nav a{
 }
 
 nav h4{
-    font-size: 1vw;
+    font-size: 1rem;
 }  
 
 nav img{
@@ -118,10 +129,11 @@ nav div.nav_button{
 
 nav div.nav_button:hover{
     color: #101010;
+    font-style: oblique;
     background-color: white;
 }
 
-/*main*/
+
 
 div#main nav div div.subscription{
     display: flex;
@@ -143,8 +155,17 @@ div#main{
     align-items: flex-start;
 }
 
+/*section principale*/
+
 div#main article#video-frame{
     width: 80%;
+}
+
+div#main article#video-frame h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.8rem;
 }
 
 div.show-case{
@@ -169,6 +190,20 @@ div.show-case{
 
 .card h5, .card p{
     margin: 4px;
+    font-family: 'PT Sans', 'Roboto',sans-serif;
+    font-style: normal;
+}
+
+.card h5{
+    font-weight: bold;
+    font-stretch: expanded;
+    font-size: 1.3rem;
+}
+
+.card p{
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 1.1rem;
 }
 
 /*footer*/
@@ -180,6 +215,9 @@ footer{
 }
 
 footer div p{
+    font-family: 'Roboto Mono', 'Roboto' sans-serif;
+    font-weight: normal;
+    font-style: normal;
     font-size: 0.8rem;
 }
 
