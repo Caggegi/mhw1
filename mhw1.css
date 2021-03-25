@@ -55,6 +55,8 @@ header div#search h4{
 }
 
 header div#account{
+    font-style: normal;
+    font-family: 'SF_custom', 'Roboto', sans-serif;
     color: #fff;
     display: flex;
     align-items: center;
@@ -85,7 +87,7 @@ header div#overlay{
 /*navigation*/
 
 nav{
-    font-family: 'SF_custom', 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
     font-style: normal;
     margin-right: 16px;
